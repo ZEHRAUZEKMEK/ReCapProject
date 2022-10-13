@@ -20,9 +20,10 @@ namespace Core.DataAccess.EntityFramework
                 var addedEntity = context.Entry(entity);
                 addedEntity.State = EntityState.Added;
                 context.SaveChanges();
-
             }
+
         }
+
 
         public void Delete(TEntity entity)
         {
@@ -48,10 +49,12 @@ namespace Core.DataAccess.EntityFramework
         {
             using (TContext context = new TContext())
             {
+                
                 return filter == null
                     ? context.Set<TEntity>().ToList()
                     : context.Set<TEntity>().Where(filter).ToList();
             }
+
         }
 
         public void Update(TEntity entity)

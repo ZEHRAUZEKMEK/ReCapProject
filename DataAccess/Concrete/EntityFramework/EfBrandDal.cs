@@ -13,14 +13,14 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfBrandDal : EfEntityRepositoryBase<Brand, CarContext>, IBrandDal
     {
-        public Brand Get()
-        {
-            throw new NotImplementedException();
-        }
+        //public Brand Get()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public List<Brand> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public List<Brand> GetAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

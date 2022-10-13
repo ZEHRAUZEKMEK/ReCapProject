@@ -14,32 +14,34 @@ namespace DataAccess.Concrete.EntityFramework
 
     public class EfCarDal : EfEntityRepositoryBase<Car, CarContext>, ICarDal
     {
-        public Car Get(Func<object, bool> value)
-        {
-            throw new NotImplementedException();
-        }
+        //public Car Get(Func<object, bool> value)
+        //{
+        //    throw new NotImplementedException();
+        //}
 
-        public List<Car> GetAll()
-        {
-            throw new NotImplementedException();
-        }
+        //public List<Car> Get()
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public List<Car> GetAll()
+        //{
+        //    throw new NotImplementedException();
+        //}
 
         public List<CarDetailDto> GetCarDetails()
         {
             using (CarContext context = new CarContext())
             {
-                var result = from d in context.Cars
-                             join c in context.Brands
-                             on d.BrandId equals c.Id
-                             select new CarDetailDto { BrandId = c.Id, Name = c.Name };
+                var result = from c in context.Cars
+                             join d in context.Brands on c.BrandId equals d.Id
+                             join co in context.Colors on c.ColorId equals co.Id
+                             select new CarDetailDto { Name = c.Description, ColorId=co.Id, BrandId=d.Id };
                 return result.ToList();
             }
             
         }
 
-        List<Car> ICarDal.Get()
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

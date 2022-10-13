@@ -8,7 +8,6 @@ namespace DataAccess.Abstract
 {
     public interface IBrandDal : IEntityRepository<Brand>
     {
-        Brand Get();
-        List<Brand> GetAll();
+       
     }
 }

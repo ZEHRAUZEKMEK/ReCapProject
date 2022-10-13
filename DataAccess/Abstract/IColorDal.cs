@@ -8,7 +8,6 @@ namespace DataAccess.Abstract
 {
     public interface IColorDal : IEntityRepository<Color>
     {
-        Color Get();
-        List<Color> GetAll();
+       
     }
 }
