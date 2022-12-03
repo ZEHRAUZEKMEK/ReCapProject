@@ -13,41 +13,122 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConcoleUI\Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{95077A63-3602-46A3-A481-6BB2A87F46DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{95077A63-3602-46A3-A481-6BB2A87F46DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59FA1566-CBE3-4CA8-B3EB-33E812E70787}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Porsche", "Porsche", "{3EC9021B-7C12-478A-BAAD-FC880AF7ACBB}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Porsche\1.jpg = ..\..\..\..\CarImages\Porsche\1.jpg
+		..\..\..\..\CarImages\Porsche\2.jpg = ..\..\..\..\CarImages\Porsche\2.jpg
+		..\..\..\..\CarImages\Porsche\3.jpg = ..\..\..\..\CarImages\Porsche\3.jpg
+		..\..\..\..\CarImages\Porsche\4.jpg = ..\..\..\..\CarImages\Porsche\4.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mercedes-Benz", "Mercedes-Benz", "{F0C2005D-FED0-4C2B-9D65-130185B0BA89}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Mercedes - Benz\1.jpg = ..\..\..\..\CarImages\Mercedes - Benz\1.jpg
+		..\..\..\..\CarImages\Mercedes - Benz\2.jpg = ..\..\..\..\CarImages\Mercedes - Benz\2.jpg
+		..\..\..\..\CarImages\Mercedes - Benz\3.jpg = ..\..\..\..\CarImages\Mercedes - Benz\3.jpg
+		..\..\..\..\CarImages\Mercedes - Benz\4.jpg = ..\..\..\..\CarImages\Mercedes - Benz\4.jpg
+		..\..\..\..\CarImages\Mercedes - Benz\5.jpg = ..\..\..\..\CarImages\Mercedes - Benz\5.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volvo", "Volvo", "{B7D8D508-ACE5-4074-AC90-BDE8C25BF58C}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Volvo\1.jpg = ..\..\..\..\CarImages\Volvo\1.jpg
+		..\..\..\..\CarImages\Volvo\2.jpg = ..\..\..\..\CarImages\Volvo\2.jpg
+		..\..\..\..\CarImages\Volvo\3.jpg = ..\..\..\..\CarImages\Volvo\3.jpg
+		..\..\..\..\CarImages\Volvo\4.jpg = ..\..\..\..\CarImages\Volvo\4.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volkswagen", "Volkswagen", "{3213F465-82E2-4518-AB02-8D507C0ACB2D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Volkswagen\1.jpg = ..\..\..\..\CarImages\Volkswagen\1.jpg
+		..\..\..\..\CarImages\Volkswagen\2.jpg = ..\..\..\..\CarImages\Volkswagen\2.jpg
+		..\..\..\..\CarImages\Volkswagen\3.jpg = ..\..\..\..\CarImages\Volkswagen\3.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jeep", "Jeep", "{5CE8BF6E-30A3-4841-B72C-B08DF6D4D390}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Jeep\1.jpg = ..\..\..\..\CarImages\Jeep\1.jpg
+		..\..\..\..\CarImages\Jeep\2.jpg = ..\..\..\..\CarImages\Jeep\2.jpg
+		..\..\..\..\CarImages\Jeep\3.jpg = ..\..\..\..\CarImages\Jeep\3.jpg
+		..\..\..\..\CarImages\Jeep\4.jpg = ..\..\..\..\CarImages\Jeep\4.jpg
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opel", "Opel", "{7A4C88B5-68A6-4FE6-82E9-3EF101F4D6D3}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\..\CarImages\Opel\default.jpg = ..\..\..\..\CarImages\Opel\default.jpg
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
 		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{3F04C098-E346-418B-B566-F0B532FF4844}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F04C098-E346-418B-B566-F0B532FF4844}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F04C098-E346-418B-B566-F0B532FF4844}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3F04C098-E346-418B-B566-F0B532FF4844}.Debug|x64.Build.0 = Debug|Any CPU
 		{3F04C098-E346-418B-B566-F0B532FF4844}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F04C098-E346-418B-B566-F0B532FF4844}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F04C098-E346-418B-B566-F0B532FF4844}.Release|x64.ActiveCfg = Release|Any CPU
+		{3F04C098-E346-418B-B566-F0B532FF4844}.Release|x64.Build.0 = Release|Any CPU
 		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Debug|x64.Build.0 = Debug|Any CPU
 		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Release|Any CPU.Build.0 = Release|Any CPU
+		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Release|x64.ActiveCfg = Release|Any CPU
+		{780378CD-AC37-443A-BAAC-DAD3E1B8E958}.Release|x64.Build.0 = Release|Any CPU
 		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Debug|x64.Build.0 = Debug|Any CPU
 		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Release|x64.ActiveCfg = Release|Any CPU
+		{7D4922B3-51E1-489B-BAD3-0AC8545E367D}.Release|x64.Build.0 = Release|Any CPU
 		{67F2B095-0256-417C-9512-6893D525C91B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{67F2B095-0256-417C-9512-6893D525C91B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67F2B095-0256-417C-9512-6893D525C91B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{67F2B095-0256-417C-9512-6893D525C91B}.Debug|x64.Build.0 = Debug|Any CPU
 		{67F2B095-0256-417C-9512-6893D525C91B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67F2B095-0256-417C-9512-6893D525C91B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67F2B095-0256-417C-9512-6893D525C91B}.Release|x64.ActiveCfg = Release|Any CPU
+		{67F2B095-0256-417C-9512-6893D525C91B}.Release|x64.Build.0 = Release|Any CPU
 		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Debug|x64.Build.0 = Debug|Any CPU
 		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Release|x64.ActiveCfg = Release|Any CPU
+		{CE08AA03-CBF5-4508-BBE3-95B9277F4AF0}.Release|x64.Build.0 = Release|Any CPU
 		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Debug|x64.ActiveCfg = Debug|x64
+		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Debug|x64.Build.0 = Debug|x64
 		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Release|x64.ActiveCfg = Release|x64
+		{95077A63-3602-46A3-A481-6BB2A87F46DF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EC9021B-7C12-478A-BAAD-FC880AF7ACBB} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
+		{F0C2005D-FED0-4C2B-9D65-130185B0BA89} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
+		{B7D8D508-ACE5-4074-AC90-BDE8C25BF58C} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
+		{3213F465-82E2-4518-AB02-8D507C0ACB2D} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
+		{5CE8BF6E-30A3-4841-B72C-B08DF6D4D390} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
+		{7A4C88B5-68A6-4FE6-82E9-3EF101F4D6D3} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BDB3C4F-ECEF-413A-AE86-D4B1C45681C7}

@@ -1,4 +1,6 @@
 ﻿using Business.Abstract;
+using Core.Entities.Concrete;
+using Core.Utilities.Results;
 using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -31,12 +33,8 @@ namespace WebAPI.Controllers
 
         public IActionResult Add(User user)
         {
-            var result=_userService.Add(user);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
+            _userService.Add(user);
+            return Ok("");
         }
 
         [HttpGet("getbyid")]

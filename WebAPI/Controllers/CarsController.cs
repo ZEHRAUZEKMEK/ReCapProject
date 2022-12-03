@@ -3,6 +3,7 @@ using Entities.Concrete;
 using Entity.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace WebAPI.Controllers
 {
@@ -19,8 +20,9 @@ namespace WebAPI.Controllers
 
         [HttpGet]
 
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
+            Thread.Sleep(100);
             var result = _carService.GetAll();
             if (result.Success)
             {
@@ -49,6 +51,30 @@ namespace WebAPI.Controllers
         public IActionResult GetById(int id)
         {
             var result = _carService.GetById(id);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+
+        }
+
+        [HttpGet("getbybrand")]
+        public IActionResult GetByBrand(int brandId)
+        {
+            var result = _carService.GetByBrandId(brandId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+
+        }
+
+        [HttpGet("getbycolor")]
+        public IActionResult GetByColor(int colorId)
+        {
+            var result = _carService.GetByColorId(colorId);
             if (result.Success)
             {
                 return Ok(result);

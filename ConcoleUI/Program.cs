@@ -1,4 +1,5 @@
 ﻿using Business.Concrete;
+using Core.Entities.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using DataAccess.Concrete.InMemory;
 using Entities.Concrete;
@@ -180,8 +181,8 @@ namespace ConcoleUI
         {
             UserManager userManager = new UserManager(new EfUserDal());
             var user = new User { Id = 18, FirstName = "Zehra", LastName = "Uzk", Email = "zehra.uzekmke@gmail.com" };
-            var result = userManager.Add(user);
-            Console.WriteLine(result.Message);
+           userManager.Add(user);
+            Console.WriteLine("");
         }
 
         private static void CustomerGetAll()
