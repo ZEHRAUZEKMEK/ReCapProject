@@ -16,12 +16,12 @@ namespace Business.Concrete
     public class BrandManager:IBrandService
     {
         IBrandDal _brandDal;
+
         public BrandManager(IBrandDal brandDal)
         {
             _brandDal = brandDal;
         }
 
-        [ValidationAspect(typeof(BrandValidator))]
         public IResult Add(Brand brand)
         {
             _brandDal.Add(brand);
@@ -39,10 +39,7 @@ namespace Business.Concrete
             return new SuccessDataResult<List<Brand>>(_brandDal.GetAll(), Messages.BrandsListed);
         }
 
-        public IDataResult<Brand> GetByBrandId(int brandId)
-        {
-            return new SuccessDataResult<Brand> (_brandDal.Get(car=>car.Id== brandId));
-        }
+       
 
         public IResult Update(Brand brand)
         {

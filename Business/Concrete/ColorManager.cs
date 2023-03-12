@@ -22,7 +22,6 @@ namespace Business.Concrete
             _colorDal = colorDal;
         }
 
-        [ValidationAspect(typeof(ColorValidator))]
         public IResult Add(Color color)
         {
             _colorDal.Add(color);
@@ -47,14 +46,7 @@ namespace Business.Concrete
             return new SuccessResult(Messages.ColorsUpdated);
         }
 
-        IDataResult<List<Color>> IColorService.GetAll()
-        {
-            throw new NotImplementedException();
-        }
+       
 
-        IDataResult<Color> IColorService.GetByColorId(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -17,7 +17,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]   
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var result = _customerService.GetAll();
             if (result.Success)
@@ -40,19 +40,8 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
-
-        public IActionResult GetById(int id)
-        {
-            var result = _customerService.GetByUserId(id);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-
-        [HttpPost("delete")]
+        
+        [HttpDelete("delete")]
 
         public IActionResult Delete(Customer customer)
         {

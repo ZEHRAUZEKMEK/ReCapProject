@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using System.Text.Json.Serialization;
 
 namespace Core.Entities.Concrete
 {
@@ -13,7 +14,11 @@ namespace Core.Entities.Concrete
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+
+        [JsonIgnore]
         public byte[] PasswordHash { get; set; }
+
+        [JsonIgnore]
         public byte[] PasswordSalt { get; set; }
         public bool Status { get; set; }
 

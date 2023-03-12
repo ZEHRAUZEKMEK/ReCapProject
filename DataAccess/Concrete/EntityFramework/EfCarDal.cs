@@ -14,21 +14,6 @@ namespace DataAccess.Concrete.EntityFramework
 
     public class EfCarDal : EfEntityRepositoryBase<Car, CarContext>, ICarDal
     {
-        //public Car Get(Func<object, bool> value)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public List<Car> Get()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public List<Car> GetAll()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         public List<CarDetailDto> GetCarDetails()
         {
             using (CarContext context = new CarContext())
@@ -36,7 +21,15 @@ namespace DataAccess.Concrete.EntityFramework
                 var result = from c in context.Cars
                              join d in context.Brands on c.BrandId equals d.Id
                              join co in context.Colors on c.ColorId equals co.Id
-                             select new CarDetailDto { Name = c.Description, ColorId=co.Id, BrandId=d.Id };
+                             select new CarDetailDto {
+                                 Id = c.Id,
+                                 BrandId = d.Id,
+                                 ColorId = co.Id,
+                                 BrandName = d.Name,
+                                 ColorName = co.Name,
+                                 DailyPrice = c.DailyPrice,
+                                 Description = c.Description
+                             };
                 return result.ToList();
             }
             

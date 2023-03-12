@@ -1,6 +1,7 @@
 ﻿using Core.Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Constants
@@ -45,5 +46,20 @@ namespace Business.Constants
         public static string SuccessfulLogin="Kayıt başarılı bir şekilde gerçekleşti.";
         public static string UserAlreadyExists="Bu kullanıcı zaten var.";
         public static string AccessTokenCreated="Yetkilendirme yapıldı.";
+        internal static SerializationInfo AuthorizationDenied;
+        internal static string CustomerNotFound;
+        internal static string CarNotFound;
+        internal static string CustomerFindeksPointIsNotEnoughForThisCar;
+        internal static string RentalDateCannotBeBeforeToday;
+        internal static string ReturnDateCannotBeLeftBlankAsThisCarWasAlsoRentedAtALaterDate;
+        internal static string ThisCarHasNotBeenReturnedYet;
+        internal static string ReturnDateCannotBeEarlierThanRentDate;
+        internal static string ThisCarIsAlreadyRentedInSelectedDateRange;
+        internal static string UserUpdated;
+        internal static string UserPasswordUpdated;
+        internal static string LastTwoDigitsOfYearMustBeEntered;
+        internal static string CardNumberMustConsistOfLettersOnly;
+        internal static string PayIsSuccessfull;
+        internal static string CardInformationIsIncorrect;
     }
 }

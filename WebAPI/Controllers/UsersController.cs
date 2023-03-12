@@ -18,16 +18,28 @@ namespace WebAPI.Controllers
             _userService = userService;
         }
 
-        [HttpGet("getall")]   
-        public IActionResult Get()
+        [HttpGet("getbymail")]
+        public IActionResult GetByEmailWithResult(string email)
         {
-            var result = _userService.GetAll();
+            var result = _userService.GetByEmailWithResult(email);
             if (result.Success)
             {
                 return Ok(result);
             }
-            return BadRequest(result.Message);    
+            return BadRequest(result);
         }
+
+        [HttpGet("getbyid")]
+        public IActionResult GetById(int userId)
+        {
+            var result = _userService.GetById(userId);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
 
         [HttpPost("add")]
 
@@ -37,20 +49,8 @@ namespace WebAPI.Controllers
             return Ok("");
         }
 
-        [HttpGet("getbyid")]
-
-        public IActionResult GetById(int id)
-        {
-            var result = _userService.GetById(id);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-
-        }
-
-        [HttpPost("delete")]
+        
+        [HttpDelete("delete")]
 
         public IActionResult Delete(User user)
         {
@@ -61,6 +61,18 @@ namespace WebAPI.Controllers
             }
             return BadRequest(result);
         }
+
+        [HttpPost("updateusernames")]
+        public IActionResult UpdateUserNames(User user)
+        {
+            var result = _userService.UpdateUserNames(user);
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
 
         [HttpPost("update")]
 

@@ -8,11 +8,12 @@ namespace Core.DataAccess
 {
     public interface IEntityRepository<T> where T:class,IEntity,new()
     {
-       List<T> GetAll(Expression<Func<T,bool>> filter=null);
+        List<T> GetByBrandId(Expression<Func<T, bool>> filter);
+        List<T> GetAll(Expression<Func<T, bool>> filter = null);
         T Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
-        void Update(T Entity);
         void Delete(T entity);
-        
+        void Update(T entity);
+
     }
 }

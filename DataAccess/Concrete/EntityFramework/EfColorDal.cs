@@ -13,14 +13,6 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfColorDal : EfEntityRepositoryBase<Color, CarContext>, IColorDal
     {
-        //public Color Get()
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public List<Color> GetAll()
-        //{
-        //    throw new NotImplementedException();
-        //}
+        
     }
 }

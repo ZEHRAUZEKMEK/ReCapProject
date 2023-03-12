@@ -31,24 +31,13 @@ namespace DataAccess.Concrete.InMemory
 
         public void Delete(Car car)
         {
-            Car carToDelete = _cars.SingleOrDefault(car => car.Id == car.Id);
+            Car carToDelete = _cars.SingleOrDefault(c => c.Id == car.Id);
             _cars.Remove(carToDelete);
-
-        }
-             
-        public Car Get(Expression<Func<Car, bool>> filter)
-        {
-            throw new NotImplementedException();
         }
 
-        public List<Car> Get()
+        public List<Car> GetAll()
         {
-            throw new NotImplementedException();
-        }
-
-        public Car Get(Func<object, bool> value)
-        {
-            throw new NotImplementedException();
+            return _cars;
         }
 
         public List<Car> GetAll(Expression<Func<Car, bool>> filter = null)
@@ -56,7 +45,17 @@ namespace DataAccess.Concrete.InMemory
             throw new NotImplementedException();
         }
 
-        public List<Car> GetAll()
+        public List<Car> GetByBrandId(Expression<Func<Car, bool>> filter)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Car Get(int carId)
+        {
+            return (Car)_cars.Where(c => c.Id == carId);
+        }
+
+        public Car Get(Expression<Func<Car, bool>> filter)
         {
             throw new NotImplementedException();
         }
@@ -65,7 +64,6 @@ namespace DataAccess.Concrete.InMemory
         {
             throw new NotImplementedException();
         }
-               
 
         public void Update(Car car)
         {
@@ -77,6 +75,20 @@ namespace DataAccess.Concrete.InMemory
             carToUpdate.Description = car.Description;
         }
 
-       
+        public List<CarDetailDto> GetCarDetailsByBrandId(int brandId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<CarDetailDto> GetCarDetailsByColorId(int colorId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public CarDetailDto GetCarDetailById(int carId)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

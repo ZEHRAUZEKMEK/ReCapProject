@@ -10,17 +10,14 @@ namespace Business.ValidationResults.FluentValidation
     {
         public CarValidator()
         {
-            RuleFor(c=>c.ColorId).NotEmpty();
+            //RuleFor(c=>c.ColorId).NotEmpty();
             RuleFor(c => c.Description).NotEmpty();
-            RuleFor(c => c.BrandId).NotEmpty();
-            RuleFor(c => c.DailyPrice).GreaterThanOrEqualTo(100).When(c=>c.BrandId==15);
-            RuleFor(c => c.Description).Must(StartWithF);
+           // RuleFor(c => c.BrandId).NotEmpty();
+            RuleFor(c => c.DailyPrice).NotEmpty();
+            RuleFor(c => c.Description).MinimumLength(10);
 
         }
 
-        private bool StartWithF(string arg)
-        {
-            return arg.StartsWith("F");
-        }
+        
     }
 }

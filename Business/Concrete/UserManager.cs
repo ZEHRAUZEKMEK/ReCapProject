@@ -48,15 +48,34 @@ namespace Business.Concrete
             return new SuccessDataResult<List<User>>(_userDal.GetAll(), Messages.UsersListed);
         }
 
-        public IDataResult<User> GetById(int id)
+        public IDataResult<User> GetById(int userId)
         {
-            return new SuccessDataResult<User>(_userDal.Get(car => car.Id == id));
+            return new SuccessDataResult<User>(_userDal.Get(u => u.Id == userId));
         }
 
         public IResult Update(User user)
         {
             _userDal.Add(user);
             return new SuccessResult(Messages.UsersUpdated);
+        }
+
+        public IDataResult<User> GetByEmailWithResult(string email)
+        {
+            var result = GetByMail(email);
+            if (result == null)
+            {
+                return new ErrorDataResult<User>(Messages.UserNotFound);
+            }
+            return new SuccessDataResult<User>(result);
+        }
+
+        public IResult UpdateUserNames(User user)
+        {
+            var updatedUser = _userDal.Get(u => u.Id == user.Id);
+            updatedUser.FirstName = user.FirstName;
+            updatedUser.LastName = user.LastName;
+            _userDal.Update(updatedUser);
+            return new SuccessResult(Messages.UserUpdated);
         }
     }
 }

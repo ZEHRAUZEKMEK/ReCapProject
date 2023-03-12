@@ -18,7 +18,7 @@ namespace WebAPI.Controllers
         }
 
         [HttpGet("getall")]
-        public IActionResult Get()
+        public IActionResult GetAll()
         {
             var result = _rentalService.GetAll();
             if (result.Success)
@@ -42,19 +42,31 @@ namespace WebAPI.Controllers
             return BadRequest(result);
         }
 
-        [HttpGet("getbyid")]
-
-        public IActionResult GetById(int id)
+        [HttpPost("rulesforadding")]
+        public IActionResult RulesForAdding(Rental rental)
         {
-            var result = _rentalService.GetById(id);
+            var result = _rentalService.RulesForAdding(rental);
+
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
-             }
+        }
 
-        [HttpPost("delete")]
+        [HttpGet("getrentaldetails")]
+        public IActionResult GetRentalDetails()
+        {
+            var result = _rentalService.GetRentalDetails();
+            if (result.Success)
+            {
+                return Ok(result);
+            }
+            return BadRequest(result);
+        }
+
+
+        [HttpDelete("delete")]
 
         public IActionResult Delete(Rental rental)
         {

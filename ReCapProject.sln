@@ -15,53 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{95077A63-3602-46A3-A481-6BB2A87F46DF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{59FA1566-CBE3-4CA8-B3EB-33E812E70787}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Porsche", "Porsche", "{3EC9021B-7C12-478A-BAAD-FC880AF7ACBB}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Porsche\1.jpg = ..\..\..\..\CarImages\Porsche\1.jpg
-		..\..\..\..\CarImages\Porsche\2.jpg = ..\..\..\..\CarImages\Porsche\2.jpg
-		..\..\..\..\CarImages\Porsche\3.jpg = ..\..\..\..\CarImages\Porsche\3.jpg
-		..\..\..\..\CarImages\Porsche\4.jpg = ..\..\..\..\CarImages\Porsche\4.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Mercedes-Benz", "Mercedes-Benz", "{F0C2005D-FED0-4C2B-9D65-130185B0BA89}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Mercedes - Benz\1.jpg = ..\..\..\..\CarImages\Mercedes - Benz\1.jpg
-		..\..\..\..\CarImages\Mercedes - Benz\2.jpg = ..\..\..\..\CarImages\Mercedes - Benz\2.jpg
-		..\..\..\..\CarImages\Mercedes - Benz\3.jpg = ..\..\..\..\CarImages\Mercedes - Benz\3.jpg
-		..\..\..\..\CarImages\Mercedes - Benz\4.jpg = ..\..\..\..\CarImages\Mercedes - Benz\4.jpg
-		..\..\..\..\CarImages\Mercedes - Benz\5.jpg = ..\..\..\..\CarImages\Mercedes - Benz\5.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volvo", "Volvo", "{B7D8D508-ACE5-4074-AC90-BDE8C25BF58C}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Volvo\1.jpg = ..\..\..\..\CarImages\Volvo\1.jpg
-		..\..\..\..\CarImages\Volvo\2.jpg = ..\..\..\..\CarImages\Volvo\2.jpg
-		..\..\..\..\CarImages\Volvo\3.jpg = ..\..\..\..\CarImages\Volvo\3.jpg
-		..\..\..\..\CarImages\Volvo\4.jpg = ..\..\..\..\CarImages\Volvo\4.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volkswagen", "Volkswagen", "{3213F465-82E2-4518-AB02-8D507C0ACB2D}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Volkswagen\1.jpg = ..\..\..\..\CarImages\Volkswagen\1.jpg
-		..\..\..\..\CarImages\Volkswagen\2.jpg = ..\..\..\..\CarImages\Volkswagen\2.jpg
-		..\..\..\..\CarImages\Volkswagen\3.jpg = ..\..\..\..\CarImages\Volkswagen\3.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jeep", "Jeep", "{5CE8BF6E-30A3-4841-B72C-B08DF6D4D390}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Jeep\1.jpg = ..\..\..\..\CarImages\Jeep\1.jpg
-		..\..\..\..\CarImages\Jeep\2.jpg = ..\..\..\..\CarImages\Jeep\2.jpg
-		..\..\..\..\CarImages\Jeep\3.jpg = ..\..\..\..\CarImages\Jeep\3.jpg
-		..\..\..\..\CarImages\Jeep\4.jpg = ..\..\..\..\CarImages\Jeep\4.jpg
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Opel", "Opel", "{7A4C88B5-68A6-4FE6-82E9-3EF101F4D6D3}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\CarImages\Opel\default.jpg = ..\..\..\..\CarImages\Opel\default.jpg
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -121,14 +74,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{3EC9021B-7C12-478A-BAAD-FC880AF7ACBB} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
-		{F0C2005D-FED0-4C2B-9D65-130185B0BA89} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
-		{B7D8D508-ACE5-4074-AC90-BDE8C25BF58C} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
-		{3213F465-82E2-4518-AB02-8D507C0ACB2D} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
-		{5CE8BF6E-30A3-4841-B72C-B08DF6D4D390} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
-		{7A4C88B5-68A6-4FE6-82E9-3EF101F4D6D3} = {59FA1566-CBE3-4CA8-B3EB-33E812E70787}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7BDB3C4F-ECEF-413A-AE86-D4B1C45681C7}
